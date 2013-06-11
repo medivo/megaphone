@@ -23,6 +23,13 @@ module Megaphone
       @room.speak msg
     end
 
+    def speak_just_deployed_message(application, rails_env, latest_hash)
+      self.speak(":satellite: [CAP #{application.upcase}] #{ENV['USER']} just deployed #{application} to #{rails_env}: revision #{latest_hash}")
+    end
+
+    def speak_last_commit(application, github_project_name, latest_hash)
+      cf.speak ":satellite: [CAP #{application.upcase}] Last commit: https://github.com/medivo/#{github_project_name}/commit/#{latest_hash}"
+    end
 
     #def repository(repository_string)
       #repository_string.split('/')[1].split('.')[0]
