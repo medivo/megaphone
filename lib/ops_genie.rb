@@ -3,8 +3,6 @@ module Megaphone
   class OpsGenie
 
     def self.send(message, customer_key, recipient)
-      message = "#{deployer} deployed #{application} #{app_env}."
-
       req = Net::HTTP::Post.new("/v1/json/alert", {'Content-Type' =>'application/json'})
       req.body = {"customerKey" => customer_key,
                  "message" => message,
