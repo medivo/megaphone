@@ -28,7 +28,7 @@ module Megaphone
     end
 
     def speak_last_commit(application, github_project_name, latest_hash)
-      cf.speak ":satellite: [CAP #{application.upcase}] Last commit: https://github.com/medivo/#{github_project_name}/commit/#{latest_hash}"
+      self.speak(":satellite: [CAP #{application.upcase}] Last commit: https://github.com/medivo/#{github_project_name}/commit/#{latest_hash}")
     end
 
     #def repository(repository_string)
