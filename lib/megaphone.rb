@@ -10,7 +10,7 @@ require 'tinder'
 require 'json'
 require 'net/http'
 #TumblerTicket
-# json and net/http are alreay required
+# json and net/http are already required
 
 module Megaphone
 end
