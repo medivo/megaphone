@@ -12,8 +12,8 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{Centralizes RequestMaker, Notificator, and Campfire for use by all appliactions}
   gem.homepage      = ""
 
-  gem.add_development_dependency "stathat"
-  gem.add_development_dependency "tinder"
+  gem.add_dependency "stathat"
+  gem.add_dependency "tinder"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
