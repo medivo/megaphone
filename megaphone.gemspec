@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = Megaphone::VERSION
   gem.authors       = ["MrPowers"]
   gem.email         = ["matthewkevinpowers@gmail.com"]
-  gem.description   = %q{Centralizes RequestMaker, Notificator, and Campfire for use by all appliactions}
-  gem.summary       = %q{Centralizes RequestMaker, Notificator, and Campfire for use by all appliactions}
+  gem.description   = %q{Centralizes RequestMaker, Notificator, and Campfire for use by all applications}
+  gem.summary       = %q{Centralizes RequestMaker, Notificator, and Campfire for use by all applications}
   gem.homepage      = ""
 
   gem.add_dependency "stathat"
