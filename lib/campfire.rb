@@ -23,6 +23,10 @@ module Megaphone
       @room.speak msg
     end
 
+    def paste(msg)
+      @room.paste msg
+    end
+
     def speak_just_deployed_message(application, rails_env, latest_hash)
       self.speak(":satellite: [CAP #{application.upcase}] #{ENV['USER']} just deployed #{application} to #{rails_env}: revision #{latest_hash}")
     end
