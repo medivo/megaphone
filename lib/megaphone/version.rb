@@ -1,3 +1,5 @@
 module Megaphone
-  VERSION = "0.0.2"
+  unless defined?(VERSION)
+    VERSION = "0.0.2"
+  end
 end
