@@ -1,6 +1,8 @@
 # Megaphone
 
-TODO: Write a gem description
+Megaphone is a gem for adding messages to the Campfire chat, sending
+messages to the OpsGenie API, interfacing with the StatHat API, and
+creating Tumbler tickets.
 
 ## Installation
 
@@ -33,12 +35,3 @@ t = Megaphone::TumblerTicket.new(application: "fake_application", deployer_name:
                       git_hash: "1234", uri: "http://localhost:3000/", tumbler_api_key: "[protected]")
 t.make_post_request
 ```
-
-
-## Contributing
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
