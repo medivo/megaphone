@@ -14,6 +14,7 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency "stathat"
   gem.add_dependency "tinder"
+  gem.add_dependency "rake"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
