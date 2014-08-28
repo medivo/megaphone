@@ -1,5 +1,6 @@
 require "bundler/gem_tasks"
-require_relative 'lib/megaphone'
+require 'megaphone'
+require "megaphone/tasks"
 
 Dir["lib/tasks/**/*.rake"].each { |ext| load ext }
 
