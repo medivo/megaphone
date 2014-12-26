@@ -12,7 +12,7 @@ module Megaphone
     end
 
     def establish_session
-      @session = Slack::Notifier.new(@token, channel: @channel,  username: @username})
+      @session = Slacky::Notifier.new(@token, channel: @channel,  username: @username})
     end
 
     def speak(msg)
