@@ -1,12 +1,12 @@
 module Megaphone
 
-  class Slack
+  class Slacky
     attr_reader :session, :room
 
     def initialize(args)
       @token = args.fetch(:token)
-      @channel = args.fetch(:room_name) ||= "#engineering"
-      @username = args.fetch(:username) ||= "notifier"
+      @channel = args.fetch(:room_name, "#engineering")
+      @username = args.fetch(:username, "notifier")
       @room = @channel#for compatibility? not sure if it is is needed.
       establish_session
     end
