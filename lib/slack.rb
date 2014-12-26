@@ -1,6 +1,6 @@
 module Megaphone
 
-  class slack
+  class Slack
     attr_reader :session, :room
 
     def initialize(args)
