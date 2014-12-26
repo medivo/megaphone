@@ -1,4 +1,5 @@
 module Megaphone
+require 'slack-notifier'
 
   class Slacky
     attr_reader :session, :room
@@ -12,7 +13,7 @@ module Megaphone
     end
 
     def establish_session
-      @session = Slacky::Notifier.new(@token, channel: @channel,  username: @username})
+      @session = Slack::Notifier.new(@token, channel: @channel,  username: @username)
     end
 
     def speak(msg)
@@ -38,7 +39,5 @@ module Megaphone
     end
 
   end
-
-end
-
 #Notes on formatting rules: https://api.slack.com/docs/formatting
+end
