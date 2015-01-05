@@ -21,7 +21,7 @@ require 'slack-notifier'
     end
 
     def paste(msg)
-      self.speak "``` #{msg} ```", icon_emoji: ":mdb:"
+      @session.ping "``` #{msg} ```", icon_emoji: ":mdb:"
     end
 
     def speak_just_deployed_message(application, rails_env, latest_hash)
